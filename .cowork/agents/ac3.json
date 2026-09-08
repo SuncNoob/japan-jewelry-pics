@@ -1,9 +1,12 @@
 {
   "id": "ac3",
   "role": "analyst",
-  "capabilities": ["fetch", "extract"],
+  "capabilities": [
+    "fetch",
+    "extract"
+  ],
   "model": "Auto",
   "host": "53730",
-  "heartbeat_at": 0,
+  "heartbeat_at": 1788854375,
   "protocol": "1.0"
 }
