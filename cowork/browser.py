@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 """Headless Chrome fetch and product-image extraction. Stdlib + system Chrome."""
 
 from __future__ import annotations
@@ -262,4 +260,3 @@ def _slug(path: str) -> str:
     base = re.sub(r"\.[a-z0-9]+$", "", base, flags=re.I)
     cleaned = re.sub(r"[^a-zA-Z0-9]+", "-", base).strip("-").lower()[:40]
     return ("-" + cleaned) if cleaned else ""
->>>>>>> Stashed changes
