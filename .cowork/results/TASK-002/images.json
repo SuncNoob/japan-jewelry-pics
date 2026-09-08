@@ -3,31 +3,33 @@
   "page": "https://www.lienujewelry.com/collections/all",
   "engine": "codex",
   "codex_code": 0,
+  "pdp_pages": 16,
+  "required_pdp_pages": 12,
   "images": [
     {
       "ok": true,
       "file": "pics/lienu/01.jpg",
-      "bytes": 15884
-    },
-    {
-      "ok": true,
-      "file": "pics/lienu/02.jpg",
-      "bytes": 22522
-    },
-    {
-      "ok": true,
-      "file": "pics/lienu/03.jpg",
       "bytes": 38366
     },
     {
       "ok": true,
-      "file": "pics/lienu/04.jpg",
+      "file": "pics/lienu/02.jpg",
       "bytes": 301689
     },
     {
       "ok": true,
+      "file": "pics/lienu/03.jpg",
+      "bytes": 282043
+    },
+    {
+      "ok": true,
+      "file": "pics/lienu/04.jpg",
+      "bytes": 245978
+    },
+    {
+      "ok": true,
       "file": "pics/lienu/05.jpg",
-      "bytes": 9878
+      "bytes": 266588
     },
     {
       "ok": true,
@@ -37,12 +39,52 @@
     {
       "ok": true,
       "file": "pics/lienu/07.jpg",
-      "bytes": 282043
+      "bytes": 149619
     },
     {
       "ok": true,
       "file": "pics/lienu/08.jpg",
+      "bytes": 22522
+    },
+    {
+      "ok": true,
+      "file": "pics/lienu/09.jpg",
+      "bytes": 11048
+    },
+    {
+      "ok": true,
+      "file": "pics/lienu/10.jpg",
+      "bytes": 19847
+    },
+    {
+      "ok": true,
+      "file": "pics/lienu/11.jpg",
+      "bytes": 6805
+    },
+    {
+      "ok": true,
+      "file": "pics/lienu/12.jpg",
+      "bytes": 9878
+    },
+    {
+      "ok": true,
+      "file": "pics/lienu/13.jpg",
+      "bytes": 5829
+    },
+    {
+      "ok": true,
+      "file": "pics/lienu/14.jpg",
       "bytes": 16287
+    },
+    {
+      "ok": true,
+      "file": "pics/lienu/15.jpg",
+      "bytes": 15884
+    },
+    {
+      "ok": true,
+      "file": "pics/lienu/16.jpg",
+      "bytes": 22077
     }
   ]
 }
