@@ -4,70 +4,55 @@
     {
       "url": "https://www.lienujewelry.com/collections/all",
       "ok": true,
-      "engine": "chrome",
-      "title": "商品\n – LIENU jewelryAmerican ExpressApple PayGoogle PayJCBMastercardShop PayVisa",
+      "engine": "codex",
+      "title": "lienu",
       "brand": "lienu",
       "images": [
         {
-          "url": "http://cdn.shopify.com/s/files/1/0616/9342/7920/files/209c85a75ee3f0b59f28d17fb6235168_f495fe11-823b-488d-8a45-c972f4cbee31.png?height=628&pad_color=ffffff&v=1672039078&width=1200",
           "ok": true,
-          "file": "pics/lienu/01-209c85a75ee3f0b59f28d17fb6235168-f495fe1.png",
-          "bytes": 39873,
-          "content_type": "image/png"
+          "file": "pics/lienu/01.jpg",
+          "bytes": 15884
         },
         {
-          "url": "https://cdn.shopify.com/s/files/1/0616/9342/7920/files/209c85a75ee3f0b59f28d17fb6235168_f495fe11-823b-488d-8a45-c972f4cbee31.png?v=1672039078&width=600",
           "ok": true,
-          "file": "pics/lienu/02-209c85a75ee3f0b59f28d17fb6235168-f495fe1.png",
-          "bytes": 23498,
-          "content_type": "image/png"
+          "file": "pics/lienu/02.jpg",
+          "bytes": 22522
         },
         {
-          "url": "https://cdn.shopify.com/s/files/1/0616/9342/7920/files/007_5d8c4041-a2dd-4cf9-8280-7fa05e83ffd1.jpg?v=1702255061&width=533",
           "ok": true,
-          "file": "pics/lienu/03-007-5d8c4041-a2dd-4cf9-8280-7fa05e83ffd1.jpg",
-          "bytes": 36228,
-          "content_type": "image/jpeg"
+          "file": "pics/lienu/03.jpg",
+          "bytes": 38366
         },
         {
-          "url": "https://cdn.shopify.com/s/files/1/0616/9342/7920/files/007_5d8c4041-a2dd-4cf9-8280-7fa05e83ffd1.jpg?v=1702255061",
           "ok": true,
-          "file": "pics/lienu/04-007-5d8c4041-a2dd-4cf9-8280-7fa05e83ffd1.jpg",
-          "bytes": 217687,
-          "content_type": "image/jpeg"
+          "file": "pics/lienu/04.jpg",
+          "bytes": 301689
         },
         {
-          "url": "https://cdn.shopify.com/s/files/1/0616/9342/7920/files/011_e495a8ed-8638-43ac-97f8-54e1454e7bf1.jpg?v=1779869943&width=533",
           "ok": true,
-          "file": "pics/lienu/05-011-e495a8ed-8638-43ac-97f8-54e1454e7bf1.jpg",
-          "bytes": 12599,
-          "content_type": "image/jpeg"
+          "file": "pics/lienu/05.jpg",
+          "bytes": 9878
         },
         {
-          "url": "https://cdn.shopify.com/s/files/1/0616/9342/7920/files/011_e495a8ed-8638-43ac-97f8-54e1454e7bf1.jpg?v=1779869943",
           "ok": true,
-          "file": "pics/lienu/06-011-e495a8ed-8638-43ac-97f8-54e1454e7bf1.jpg",
-          "bytes": 38366,
-          "content_type": "image/jpeg"
+          "file": "pics/lienu/06.jpg",
+          "bytes": 53131
         },
         {
-          "url": "https://cdn.shopify.com/s/files/1/0616/9342/7920/files/005.jpg?v=1726035138&width=533",
           "ok": true,
-          "file": "pics/lienu/07-005.jpg",
-          "bytes": 9069,
-          "content_type": "image/jpeg"
+          "file": "pics/lienu/07.jpg",
+          "bytes": 282043
         },
         {
-          "url": "https://cdn.shopify.com/s/files/1/0616/9342/7920/files/005.jpg?v=1726035138",
           "ok": true,
-          "file": "pics/lienu/08-005.jpg",
-          "bytes": 301689,
-          "content_type": "image/jpeg"
+          "file": "pics/lienu/08.jpg",
+          "bytes": 16287
         }
       ],
-      "file": ".cowork/results/TASK-002/https___www_lienujewelry_com_collections_all.html",
-      "bytes": 574244
+      "codex_code": 0,
+      "file": ".cowork/results/TASK-002/codex.log",
+      "bytes": 739800
     }
   ],
-  "at": 1788854513
+  "at": 1788856094
 }
