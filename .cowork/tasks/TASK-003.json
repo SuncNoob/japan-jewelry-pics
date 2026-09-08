@@ -3,7 +3,7 @@
   "scenario": "crawler",
   "type": "fetch",
   "title": "Fetch hasuna",
-  "status": "in_progress",
+  "status": "done",
   "body": "",
   "need": [],
   "owner": "ac3",
@@ -34,5 +34,5 @@
   "brand": "hasuna",
   "max_images": 8,
   "created_at": 1788854389,
-  "updated_at": 1788854449
+  "updated_at": 1788854517
 }
