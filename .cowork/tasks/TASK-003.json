@@ -3,10 +3,10 @@
   "scenario": "crawler",
   "type": "fetch",
   "title": "Fetch hasuna",
-  "status": "in_progress",
+  "status": "open",
   "body": "",
   "need": [],
-  "owner": "ac2",
+  "owner": "",
   "seed_urls": [
     "https://hasuna.com/collections/all"
   ],
@@ -35,5 +35,5 @@
   "brand": "hasuna",
   "max_images": 16,
   "created_at": 1788854389,
-  "updated_at": 1788858388
+  "updated_at": 1788861134
 }
