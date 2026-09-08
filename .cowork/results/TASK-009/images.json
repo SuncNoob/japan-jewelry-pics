@@ -1,0 +1,90 @@
+{
+  "brand": "lucine",
+  "page": "https://lucine.jp/collections/all",
+  "engine": "codex",
+  "codex_code": 0,
+  "pdp_pages": 16,
+  "required_pdp_pages": 12,
+  "images": [
+    {
+      "ok": true,
+      "file": "pics/lucine/01.jpg",
+      "bytes": 2037949
+    },
+    {
+      "ok": true,
+      "file": "pics/lucine/02.jpg",
+      "bytes": 1807596
+    },
+    {
+      "ok": true,
+      "file": "pics/lucine/03.jpg",
+      "bytes": 1802417
+    },
+    {
+      "ok": true,
+      "file": "pics/lucine/04.jpg",
+      "bytes": 724352
+    },
+    {
+      "ok": true,
+      "file": "pics/lucine/05.jpg",
+      "bytes": 1738912
+    },
+    {
+      "ok": true,
+      "file": "pics/lucine/06.jpg",
+      "bytes": 2237807
+    },
+    {
+      "ok": true,
+      "file": "pics/lucine/07.jpg",
+      "bytes": 1600751
+    },
+    {
+      "ok": true,
+      "file": "pics/lucine/08.jpg",
+      "bytes": 1361086
+    },
+    {
+      "ok": true,
+      "file": "pics/lucine/09.jpg",
+      "bytes": 1758786
+    },
+    {
+      "ok": true,
+      "file": "pics/lucine/10.webp",
+      "bytes": 2844446
+    },
+    {
+      "ok": true,
+      "file": "pics/lucine/11.webp",
+      "bytes": 1254500
+    },
+    {
+      "ok": true,
+      "file": "pics/lucine/12.jpg",
+      "bytes": 547430
+    },
+    {
+      "ok": true,
+      "file": "pics/lucine/13.webp",
+      "bytes": 3062794
+    },
+    {
+      "ok": true,
+      "file": "pics/lucine/14.jpg",
+      "bytes": 1624214
+    },
+    {
+      "ok": true,
+      "file": "pics/lucine/15.webp",
+      "bytes": 3220459
+    },
+    {
+      "ok": true,
+      "file": "pics/lucine/16.jpg",
+      "bytes": 1860441
+    }
+  ]
+}
