@@ -1,0 +1,16 @@
+{
+  "ok": false,
+  "fetched": [
+    {
+      "url": "https://www.synchronicity-silver.com/",
+      "ok": false,
+      "engine": "http",
+      "title": "synchronicity silver jewelrySEARCH",
+      "brand": "synchronicity",
+      "images": [],
+      "file": ".cowork/results/TASK-006/https___www_synchronicity_silver_com_.html",
+      "bytes": 137156
+    }
+  ],
+  "at": 1788854861
+}
