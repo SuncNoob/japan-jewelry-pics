@@ -175,14 +175,27 @@ def _fetch_browser_page(store: Store, task: Task, url: str, allow_hosts: list[st
     limit = task.max_images or DEFAULT_MAX_IMAGES
     pic_dir = store.root / "pics" / brand
     pic_dir.mkdir(parents=True, exist_ok=True)
-    try:
-        html, engine = dump_dom(url)
-    except (URLError, TimeoutError, ValueError, OSError) as exc:
-        return {"url": url, "ok": False, "error": str(exc), "engine": "browser"}
-    raw_path = store.result_dir(task.id) / _safe_name(url)
-    raw_path.write_text(html, encoding="utf-8")
-    candidates = parse_images(html, url)
-    candidates.extend(shopify_images(url, allow_hosts))
+    html = ""
+    engine = "http"
+    candidates = shopify_images(url, allow_hosts)
+    if candidates:
+        engine = "shopify-json"
+    if len(candidates) < limit:
+        try:
+            html, engine = dump_dom(url)
+        except (URLError, TimeoutError, ValueError, OSError) as exc:
+            if not candidates:
+                return {"url": url, "ok": False, "error": str(exc), "engine": "browser"}
+        else:
+            if engine == "chrome" and candidates:
+                engine = "chrome+shopify-json"
+            candidates = parse_images(html, url) + candidates
+    if html:
+        raw_path = store.result_dir(task.id) / _safe_name(url)
+        raw_path.write_text(html, encoding="utf-8")
+        raw_rel = str(raw_path.relative_to(store.root))
+    else:
+        raw_rel = ""
     saved = []
     seen: set[str] = set()
     for candidate in candidates:
@@ -205,10 +218,10 @@ def _fetch_browser_page(store: Store, task: Task, url: str, allow_hosts: list[st
         "url": url,
         "ok": bool(saved),
         "engine": engine,
-        "title": extract_title(html.encode("utf-8", "replace")),
+        "title": extract_title(html.encode("utf-8", "replace")) if html else brand,
         "brand": brand,
         "images": saved,
-        "file": str(raw_path.relative_to(store.root)),
+        "file": raw_rel,
         "bytes": len(html.encode("utf-8")),
     }
 

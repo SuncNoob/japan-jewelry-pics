@@ -150,8 +150,11 @@ def chrome_bin() -> str | None:
     return None
 
 
-def dump_dom(url: str, timeout: int = 45) -> tuple[str, str]:
+def dump_dom(url: str, timeout: int = 35) -> tuple[str, str]:
     """Return (html, engine). engine is chrome or http."""
+    import os
+    import signal
+
     chrome = chrome_bin()
     if chrome:
         cmd = [
@@ -161,22 +164,27 @@ def dump_dom(url: str, timeout: int = 45) -> tuple[str, str]:
             "--no-sandbox",
             "--disable-dev-shm-usage",
             "--hide-scrollbars",
-            "--virtual-time-budget=15000",
-            f"--timeout={timeout * 1000}",
+            "--virtual-time-budget=8000",
             "--dump-dom",
             url,
         ]
         try:
-            proc = subprocess.run(
+            proc = subprocess.Popen(
                 cmd,
-                capture_output=True,
-                timeout=timeout + 10,
-                check=False,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.DEVNULL,
+                start_new_session=True,
             )
-            html = proc.stdout.decode("utf-8", "replace")
+            try:
+                stdout, _ = proc.communicate(timeout=timeout)
+            except subprocess.TimeoutExpired:
+                os.killpg(proc.pid, signal.SIGKILL)
+                proc.wait(timeout=5)
+                stdout = b""
+            html = (stdout or b"").decode("utf-8", "replace")
             if len(html) > 500:
                 return html, "chrome"
-        except (subprocess.TimeoutExpired, OSError):
+        except OSError:
             pass
     req = Request(url, headers={"User-Agent": USER_AGENT})
     with urlopen(req, timeout=timeout) as resp:
