@@ -7,34 +7,45 @@ import shutil
 import subprocess
 from pathlib import Path
 
-CODEX_TIMEOUT_SECONDS = 1200
-CODEX_LEASE_SECONDS = 1800
-
-
-def codex_bin() -> str | None:
-    return shutil.which("codex")
+CODEX_TIMEOUT_SECONDS = 1800
+CODEX_LEASE_SECONDS = 2400
+DEFAULT_MAX_IMAGES = 16
+MIN_PDP_PAGES = 12
 
 
 def jewelry_prompt(brand: str, url: str, allow_hosts: list[str], limit: int, pic_dir: str) -> str:
     hosts = ", ".join(allow_hosts)
-    return f"""You are a 无影 Computer Agent. Use THIS machine's Codex tools and the browser-use MCP (real browser) so the session is visible in the Wuying console. Consume this Agent Computer's own Wuying gateway token. Do not ask for approval.
+    need = min(limit, MIN_PDP_PAGES)
+    return f"""You are a 无影 Computer Agent. Use THIS machine's Codex tools and the browser-use MCP (real Chrome) so the session is visible in the Wuying console. Consume this Agent Computer's own Wuying gateway token. Do not ask for approval.
 
 Brand: {brand}
-Official start URL: {url}
-Image output directory (create if needed): {pic_dir}
-Max product photos: {limit}
+Official listing URL (start here, this is NOT the image source): {url}
+Image output directory (create if needed, overwrite old files): {pic_dir}
+Save {limit} unique product photos from at least {need} distinct product detail pages.
 Allowed hosts only: {hosts}
 
-Do this:
-1. Open the official site in the browser. Do not use a search engine as the source of images.
-2. From the listing, click into at least 4 product detail pages (子页面 / individual jewelry items).
-3. On each product page, download the actual product photo (the jewelry) into {pic_dir} as jpg/png/webp. Use curl or the browser. Filenames like 01.jpg, 02.jpg.
-4. Skip logos, favicons, banners, payment icons, and empty placeholders.
-5. Do not visit or save images from hosts outside the allow list.
-6. Write {pic_dir}/manifest.json as [{{"file":"01.jpg","source_page":"...","image_url":"..."}}].
+Hard rules — listing-page thumbnails are a FAIL:
+1. Open the official listing in the browser. Do not use a search engine.
+2. Click into individual product DETAIL pages (子页面). Required URL shapes:
+   - Shopify: /products/<slug>
+   - ARTIDA OUD: /item/detail/...
+   - synchronicity / BASE: /items/<id>
+   Do NOT download images while still on /collections/, category, or home.
+3. On each detail page, save the MAIN product photo of the jewelry itself (hero / og:image / first gallery still). Prefer the largest file (width>=800 if possible). Use curl or the browser download.
+4. One product page → one file. No duplicate SKUs, no two sizes of the same CDN asset.
+5. Skip logos, favicons, banners, models-only lifestyle if no jewelry is visible, payment icons, about-us stones, campaign KV.
+6. Filenames: 01.jpg … {limit:02d}.jpg (png/webp ok).
+7. Write {pic_dir}/manifest.json as a JSON array:
+   [{{"file":"01.jpg","source_page":"https://.../products/...","image_url":"https://cdn...","product":"name"}}]
+   source_page MUST be the detail URL from step 2, never the listing URL.
 
-When finished, print DONE and the list of saved files. If the site blocks you, print FAIL and why.
+When finished, print DONE, how many distinct detail pages you opened, and the file list.
+If you cannot open detail pages, print FAIL and why. Saving {limit} images all from the listing page is FAIL.
 """
+
+
+def codex_bin() -> str | None:
+    return shutil.which("codex")
 
 
 def run_codex(prompt: str, cwd: Path, timeout: int = CODEX_TIMEOUT_SECONDS) -> dict:

@@ -12,7 +12,7 @@ from cowork.browser import (
     DEFAULT_MAX_IMAGES,
     brand_from_url,
 )
-from cowork.codex_run import jewelry_prompt, run_codex
+from cowork.codex_run import MIN_PDP_PAGES, jewelry_prompt, run_codex
 from cowork.protocol import Task, dump_json, host_allowed, now
 from cowork.store import Store
 
@@ -167,41 +167,109 @@ def run_fetch(store: Store, task: Task) -> dict:
     return result
 
 
+IMAGE_SUFFIXES = {".jpg", ".jpeg", ".png", ".webp", ".gif"}
+PDP_MARKERS = ("/products/", "/item/detail", "/items/")
+LISTING_MARKERS = ("/collections/", "category_id=", "/category/")
+
+
+def _clear_pic_dir(pic_dir: Path) -> None:
+    if not pic_dir.exists():
+        return
+    for path in pic_dir.iterdir():
+        if path.name == "manifest.json" or path.suffix.lower() in IMAGE_SUFFIXES:
+            path.unlink()
+
+
+def required_pdp_pages(limit: int) -> int:
+    if limit <= 0:
+        return MIN_PDP_PAGES
+    if limit < 8:
+        return max(1, limit)
+    return min(limit, MIN_PDP_PAGES)
+
+
+def is_pdp_url(url: str) -> bool:
+    low = (url or "").lower()
+    if not low:
+        return False
+    return any(m in low for m in PDP_MARKERS)
+
+
+def pdp_page_count(manifest: list[dict]) -> int:
+    pages = set()
+    for item in manifest:
+        page = str(item.get("source_page") or "").split("?")[0].rstrip("/")
+        if is_pdp_url(page):
+            pages.add(page)
+    return len(pages)
+
+
+def load_manifest(pic_dir: Path) -> list[dict]:
+    path = pic_dir / "manifest.json"
+    if not path.exists():
+        return []
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return []
+    return data if isinstance(data, list) else []
+
+
 def _fetch_browser_page(store: Store, task: Task, url: str, allow_hosts: list[str]) -> dict:
     """Dispatch to Codex on this Agent Computer (Wuying gateway session)."""
     brand = task.brand or brand_from_url(url)
     limit = task.max_images or DEFAULT_MAX_IMAGES
     pic_dir = store.root / "pics" / brand
     pic_dir.mkdir(parents=True, exist_ok=True)
+    _clear_pic_dir(pic_dir)
     rel_dir = str(pic_dir.relative_to(store.root))
-    prompt = jewelry_prompt(brand, url, allow_hosts, limit, rel_dir)
-    codex = run_codex(prompt, store.root)
+    need = required_pdp_pages(limit)
+    last = {}
+    ok_harvest = False
+    for attempt in range(2):
+        prompt = jewelry_prompt(brand, url, allow_hosts, limit, rel_dir)
+        if attempt:
+            prompt += (
+                "\n\nRETRY: previous save was listing thumbnails or too few detail pages. "
+                f"You MUST click at least {need} product detail URLs before downloading anything."
+            )
+        last = run_codex(prompt, store.root)
+        images = _list_saved_images(store.root, pic_dir)
+        pdps = pdp_page_count(load_manifest(pic_dir))
+        ok_harvest = bool(images) and pdps >= need
+        if ok_harvest:
+            break
     images = _list_saved_images(store.root, pic_dir)
+    pdps = pdp_page_count(load_manifest(pic_dir))
     dump_json(
         store.result_dir(task.id) / "images.json",
         {
             "brand": brand,
             "page": url,
             "engine": "codex",
-            "codex_code": codex.get("code"),
+            "codex_code": last.get("code"),
+            "pdp_pages": pdps,
+            "required_pdp_pages": need,
             "images": images,
         },
     )
     notes = store.result_dir(task.id) / "codex.log"
     notes.write_text(
-        (codex.get("stdout") or "") + "\n--- stderr ---\n" + (codex.get("stderr") or ""),
+        (last.get("stdout") or "") + "\n--- stderr ---\n" + (last.get("stderr") or ""),
         encoding="utf-8",
     )
     return {
         "url": url,
-        "ok": bool(images),
+        "ok": ok_harvest,
         "engine": "codex",
         "title": brand,
         "brand": brand,
         "images": images,
-        "codex_code": codex.get("code"),
+        "pdp_pages": pdps,
+        "codex_code": last.get("code"),
         "file": str(notes.relative_to(store.root)),
         "bytes": sum(item.get("bytes") or 0 for item in images),
+        "error": "" if ok_harvest else f"need {need} product detail pages, got {pdps}",
     }
 
 
