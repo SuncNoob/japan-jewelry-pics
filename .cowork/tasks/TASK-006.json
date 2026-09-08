@@ -1,17 +1,13 @@
 {
-  "id": "TASK-001",
+  "id": "TASK-006",
   "scenario": "crawler",
-  "type": "enqueue",
-  "title": "Enqueue 5 official jewelry shops",
-  "status": "done",
-  "body": "Browser-crawl official product images only. Respect allow_hosts.",
+  "type": "fetch",
+  "title": "Fetch synchronicity",
+  "status": "open",
+  "body": "",
   "need": [],
-  "owner": "ac1",
+  "owner": "",
   "seed_urls": [
-    "https://www.lienujewelry.com/collections/all",
-    "https://hasuna.com/collections/all",
-    "https://lesbonbon.jp/collections/all",
-    "https://www.artidaoud.com/item?category_id=41",
     "https://www.synchronicity-silver.com/"
   ],
   "allow_hosts": [
@@ -31,10 +27,12 @@
   ],
   "path": "",
   "content": "",
-  "depends_on": [],
+  "depends_on": [
+    "TASK-001"
+  ],
   "mode": "browser",
-  "brand": "",
+  "brand": "synchronicity",
   "max_images": 8,
-  "created_at": 1788855000,
+  "created_at": 1788854389,
   "updated_at": 1788854389
 }

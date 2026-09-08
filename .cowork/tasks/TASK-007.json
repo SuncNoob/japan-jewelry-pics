@@ -1,0 +1,40 @@
+{
+  "id": "TASK-007",
+  "scenario": "crawler",
+  "type": "extract",
+  "title": "Catalog images from TASK-001",
+  "status": "open",
+  "body": "",
+  "need": [],
+  "owner": "",
+  "seed_urls": [],
+  "allow_hosts": [
+    "lienujewelry.com",
+    "hasuna.com",
+    "lesbonbon.jp",
+    "artidaoud.com",
+    "synchronicity-silver.com",
+    "shopify.com",
+    "shopifycdn.com",
+    "myshopify.com",
+    "thebase.in",
+    "base.shop",
+    "cloudfront.net",
+    "imgix.net",
+    "googleusercontent.com"
+  ],
+  "path": "",
+  "content": "",
+  "depends_on": [
+    "TASK-002",
+    "TASK-003",
+    "TASK-004",
+    "TASK-005",
+    "TASK-006"
+  ],
+  "mode": "http",
+  "brand": "",
+  "max_images": 0,
+  "created_at": 1788854389,
+  "updated_at": 1788854389
+}

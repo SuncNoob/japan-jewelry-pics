@@ -1,0 +1,38 @@
+{
+  "id": "TASK-004",
+  "scenario": "crawler",
+  "type": "fetch",
+  "title": "Fetch les-bon-bon",
+  "status": "open",
+  "body": "",
+  "need": [],
+  "owner": "",
+  "seed_urls": [
+    "https://lesbonbon.jp/collections/all"
+  ],
+  "allow_hosts": [
+    "lienujewelry.com",
+    "hasuna.com",
+    "lesbonbon.jp",
+    "artidaoud.com",
+    "synchronicity-silver.com",
+    "shopify.com",
+    "shopifycdn.com",
+    "myshopify.com",
+    "thebase.in",
+    "base.shop",
+    "cloudfront.net",
+    "imgix.net",
+    "googleusercontent.com"
+  ],
+  "path": "",
+  "content": "",
+  "depends_on": [
+    "TASK-001"
+  ],
+  "mode": "browser",
+  "brand": "les-bon-bon",
+  "max_images": 8,
+  "created_at": 1788854389,
+  "updated_at": 1788854389
+}

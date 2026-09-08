@@ -1,0 +1,27 @@
+{
+  "seed_task": "TASK-001",
+  "allow_hosts": [
+    "lienujewelry.com",
+    "hasuna.com",
+    "lesbonbon.jp",
+    "artidaoud.com",
+    "synchronicity-silver.com",
+    "shopify.com",
+    "shopifycdn.com",
+    "myshopify.com",
+    "thebase.in",
+    "base.shop",
+    "cloudfront.net",
+    "imgix.net",
+    "googleusercontent.com"
+  ],
+  "urls": [
+    "https://www.lienujewelry.com/collections/all",
+    "https://hasuna.com/collections/all",
+    "https://lesbonbon.jp/collections/all",
+    "https://www.artidaoud.com/item?category_id=41",
+    "https://www.synchronicity-silver.com/"
+  ],
+  "rejected": [],
+  "at": 1788854389
+}

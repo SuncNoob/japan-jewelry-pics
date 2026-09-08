@@ -1,0 +1,38 @@
+{
+  "id": "TASK-002",
+  "scenario": "crawler",
+  "type": "fetch",
+  "title": "Fetch lienu",
+  "status": "open",
+  "body": "",
+  "need": [],
+  "owner": "",
+  "seed_urls": [
+    "https://www.lienujewelry.com/collections/all"
+  ],
+  "allow_hosts": [
+    "lienujewelry.com",
+    "hasuna.com",
+    "lesbonbon.jp",
+    "artidaoud.com",
+    "synchronicity-silver.com",
+    "shopify.com",
+    "shopifycdn.com",
+    "myshopify.com",
+    "thebase.in",
+    "base.shop",
+    "cloudfront.net",
+    "imgix.net",
+    "googleusercontent.com"
+  ],
+  "path": "",
+  "content": "",
+  "depends_on": [
+    "TASK-001"
+  ],
+  "mode": "browser",
+  "brand": "lienu",
+  "max_images": 8,
+  "created_at": 1788854389,
+  "updated_at": 1788854389
+}
