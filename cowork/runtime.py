@@ -7,7 +7,7 @@ import traceback
 from typing import Callable
 
 from cowork.codex_run import CODEX_LEASE_SECONDS
-from cowork.browser import brand_from_url
+from cowork.browser import DEFAULT_MAX_IMAGES, brand_from_url
 from cowork.executors import run_enqueue, run_extract, run_fetch, run_implement, run_review
 from cowork.protocol import (
     DEFAULT_LEASE_SECONDS,
@@ -124,7 +124,7 @@ def spawn_followups(store: Store, task: Task, result: dict) -> list[Task]:
                 depends_on=[task.id],
                 mode=mode,
                 brand=brand,
-                max_images=task.max_images,
+                max_images=task.max_images or DEFAULT_MAX_IMAGES,
                 status="open",
                 created_at=ts,
                 updated_at=ts,
