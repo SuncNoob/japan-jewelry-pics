@@ -1,0 +1,73 @@
+{
+  "ok": true,
+  "fetched": [
+    {
+      "url": "https://www.artidaoud.com/item?category_id=41",
+      "ok": true,
+      "engine": "http",
+      "title": "All Items｜ARTIDA OUD（アルティーダ ウード）",
+      "brand": "artida-oud",
+      "images": [
+        {
+          "url": "https://www.artidaoud.com/photo/contents_block/globalnav_banner_list/ce79f137d8c12022773a24d954299915.jpg",
+          "ok": true,
+          "file": "pics/artida-oud/01-ce79f137d8c12022773a24d954299915.jpg",
+          "bytes": 45316,
+          "content_type": "image/jpeg"
+        },
+        {
+          "url": "https://www.artidaoud.com/photo/contents_block/globalnav_banner_list/onyx_312.jpg",
+          "ok": true,
+          "file": "pics/artida-oud/02-onyx-312.jpg",
+          "bytes": 95721,
+          "content_type": "image/jpeg"
+        },
+        {
+          "url": "https://www.artidaoud.com/photo/contents_block/globalnav_banner_list/4e21abd58e442cbfb6b505cf99542a18.jpg",
+          "ok": true,
+          "file": "pics/artida-oud/03-4e21abd58e442cbfb6b505cf99542a18.jpg",
+          "bytes": 20763,
+          "content_type": "image/jpeg"
+        },
+        {
+          "url": "https://www.artidaoud.com/photo/contents_block/globalnav_banner_list/pre-order_museum2609_312.jpg",
+          "ok": true,
+          "file": "pics/artida-oud/04-pre-order-museum2609-312.jpg",
+          "bytes": 31140,
+          "content_type": "image/jpeg"
+        },
+        {
+          "url": "https://www.artidaoud.com/photo/contents_block/globalnav_banner_list/lucua_permanent_2609_312.jpg",
+          "ok": true,
+          "file": "pics/artida-oud/05-lucua-permanent-2609-312.jpg",
+          "bytes": 35677,
+          "content_type": "image/jpeg"
+        },
+        {
+          "url": "https://www.artidaoud.com/photo/contents_block/globalnav_banner_list/personalstoneguide312_1.jpg",
+          "ok": true,
+          "file": "pics/artida-oud/06-personalstoneguide312-1.jpg",
+          "bytes": 15450,
+          "content_type": "image/jpeg"
+        },
+        {
+          "url": "https://www.artidaoud.com/assets/front/img/contents_about-stones.webp",
+          "ok": true,
+          "file": "pics/artida-oud/07-contents-about-stones.webp",
+          "bytes": 16172,
+          "content_type": "image/webp"
+        },
+        {
+          "url": "https://www.artidaoud.com/assets/front/img/contents_I-am-Donation.webp",
+          "ok": true,
+          "file": "pics/artida-oud/08-contents-i-am-donation.webp",
+          "bytes": 33064,
+          "content_type": "image/webp"
+        }
+      ],
+      "file": ".cowork/results/TASK-005/https___www_artidaoud_com_item_category_id_41.html",
+      "bytes": 235292
+    }
+  ],
+  "at": 1788854884
+}
