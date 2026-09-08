@@ -184,7 +184,14 @@ def tick(store: Store, card: AgentCard, lease_seconds: int = DEFAULT_LEASE_SECON
     except GitError:
         pass
     heartbeat(store, card)
-    store.sync_push(f"cowork({card.id}): heartbeat")
+    try:
+        store.sync_push(f"cowork({card.id}): heartbeat")
+    except GitError:
+        try:
+            store.pull()
+            store.sync_push(f"cowork({card.id}): heartbeat")
+        except GitError:
+            pass
 
     owned = [
         t
@@ -213,14 +220,39 @@ def tick(store: Store, card: AgentCard, lease_seconds: int = DEFAULT_LEASE_SECON
     return "claim-lost"
 
 
-def loop(store: Store, card: AgentCard, interval: int, once: bool = False) -> None:
+def wake_path(store: Store, card: AgentCard):
+    return store.inbox_dir(card.id) / "wake"
+
+
+def wait_interval(store: Store, card: AgentCard, interval: int) -> None:
+    """Sleep up to `interval` seconds, but return immediately if a wake file appears.
+
+    The laptop monitor touches `.cowork/inbox/<id>/wake` so idle agents pick up
+    newly dispatched tasks without waiting for the next poll.
+    """
     import time
 
+    path = wake_path(store, card)
+    deadline = time.time() + max(0, interval)
+    while True:
+        if path.exists():
+            try:
+                path.unlink()
+            except OSError:
+                pass
+            return
+        remaining = deadline - time.time()
+        if remaining <= 0:
+            return
+        time.sleep(min(1.0, remaining))
+
+
+def loop(store: Store, card: AgentCard, interval: int, once: bool = False) -> None:
     while True:
         tick(store, card)
         if once:
             return
-        time.sleep(interval)
+        wait_interval(store, card, interval)
 
 
 def main(argv: list[str] | None = None) -> int:
