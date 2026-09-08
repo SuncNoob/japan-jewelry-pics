@@ -1,0 +1,90 @@
+{
+  "brand": "mariha",
+  "page": "https://www.mariha.jp/collections/all",
+  "engine": "codex",
+  "codex_code": 0,
+  "pdp_pages": 16,
+  "required_pdp_pages": 12,
+  "images": [
+    {
+      "ok": true,
+      "file": "pics/mariha/01.jpg",
+      "bytes": 39800
+    },
+    {
+      "ok": true,
+      "file": "pics/mariha/02.jpg",
+      "bytes": 60499
+    },
+    {
+      "ok": true,
+      "file": "pics/mariha/03.jpg",
+      "bytes": 48745
+    },
+    {
+      "ok": true,
+      "file": "pics/mariha/04.jpg",
+      "bytes": 69542
+    },
+    {
+      "ok": true,
+      "file": "pics/mariha/05.jpg",
+      "bytes": 33215
+    },
+    {
+      "ok": true,
+      "file": "pics/mariha/06.jpg",
+      "bytes": 20443
+    },
+    {
+      "ok": true,
+      "file": "pics/mariha/07.png",
+      "bytes": 773152
+    },
+    {
+      "ok": true,
+      "file": "pics/mariha/08.jpg",
+      "bytes": 41148
+    },
+    {
+      "ok": true,
+      "file": "pics/mariha/09.jpg",
+      "bytes": 52054
+    },
+    {
+      "ok": true,
+      "file": "pics/mariha/10.jpg",
+      "bytes": 80299
+    },
+    {
+      "ok": true,
+      "file": "pics/mariha/11.jpg",
+      "bytes": 22314
+    },
+    {
+      "ok": true,
+      "file": "pics/mariha/12.jpg",
+      "bytes": 32747
+    },
+    {
+      "ok": true,
+      "file": "pics/mariha/13.png",
+      "bytes": 698985
+    },
+    {
+      "ok": true,
+      "file": "pics/mariha/14.jpg",
+      "bytes": 36401
+    },
+    {
+      "ok": true,
+      "file": "pics/mariha/15.jpg",
+      "bytes": 19518
+    },
+    {
+      "ok": true,
+      "file": "pics/mariha/16.jpg",
+      "bytes": 34806
+    }
+  ]
+}
