@@ -4,70 +4,95 @@
     {
       "url": "https://hasuna.com/collections/all",
       "ok": true,
-      "engine": "chrome",
-      "title": "",
+      "engine": "codex",
+      "title": "hasuna",
       "brand": "hasuna",
       "images": [
         {
-          "url": "https://cdn.shopify.com/s/files/1/0471/1507/5741/files/img01_4f1af92b-e34a-436d-8e5b-d036db8136da.jpg?v=1788326879",
           "ok": true,
           "file": "pics/hasuna/01-img01-4f1af92b-e34a-436d-8e5b-d036db8136.jpg",
-          "bytes": 66571,
-          "content_type": "image/jpeg"
+          "bytes": 66571
         },
         {
-          "url": "https://cdn.shopify.com/s/files/1/0471/1507/5741/files/img03_1ff845a8-a499-452a-a90e-5f9965b7006a.jpg?v=1788326879",
+          "ok": true,
+          "file": "pics/hasuna/01.jpg",
+          "bytes": 57275
+        },
+        {
           "ok": true,
           "file": "pics/hasuna/02-img03-1ff845a8-a499-452a-a90e-5f9965b700.jpg",
-          "bytes": 68672,
-          "content_type": "image/jpeg"
+          "bytes": 68672
         },
         {
-          "url": "https://cdn.shopify.com/s/files/1/0471/1507/5741/files/img02_0323eca5-fe21-4620-b402-4914be103e2a.jpg?v=1788326880",
+          "ok": true,
+          "file": "pics/hasuna/02.jpg",
+          "bytes": 118184
+        },
+        {
           "ok": true,
           "file": "pics/hasuna/03-img02-0323eca5-fe21-4620-b402-4914be103e.jpg",
-          "bytes": 69848,
-          "content_type": "image/jpeg"
+          "bytes": 69848
         },
         {
-          "url": "https://cdn.shopify.com/s/files/1/0471/1507/5741/files/img04_c96ae7f7-52ec-4ed8-87a2-5c96fdb69d59.jpg?v=1788326879",
+          "ok": true,
+          "file": "pics/hasuna/03.jpg",
+          "bytes": 38836
+        },
+        {
           "ok": true,
           "file": "pics/hasuna/04-img04-c96ae7f7-52ec-4ed8-87a2-5c96fdb69d.jpg",
-          "bytes": 72750,
-          "content_type": "image/jpeg"
+          "bytes": 72750
         },
         {
-          "url": "https://cdn.shopify.com/s/files/1/0471/1507/5741/files/img05_0b36fcb4-bba4-4528-a468-dd8cd156d4a3.jpg?v=1788326879",
+          "ok": true,
+          "file": "pics/hasuna/04.jpg",
+          "bytes": 138945
+        },
+        {
           "ok": true,
           "file": "pics/hasuna/05-img05-0b36fcb4-bba4-4528-a468-dd8cd156d4.jpg",
-          "bytes": 97817,
-          "content_type": "image/jpeg"
+          "bytes": 97817
         },
         {
-          "url": "https://cdn.shopify.com/s/files/1/0471/1507/5741/files/s02_27c165dd-84ee-4b15-95e6-418127eed9f8.jpg?v=1788326879",
+          "ok": true,
+          "file": "pics/hasuna/05.jpg",
+          "bytes": 60517
+        },
+        {
           "ok": true,
           "file": "pics/hasuna/06-s02-27c165dd-84ee-4b15-95e6-418127eed9f8.jpg",
-          "bytes": 175022,
-          "content_type": "image/jpeg"
+          "bytes": 175022
         },
         {
-          "url": "https://cdn.shopify.com/s/files/1/0471/1507/5741/files/s01_76c776df-521f-472a-a412-fe4d6c277c74.jpg?v=1788326879",
+          "ok": true,
+          "file": "pics/hasuna/06.jpg",
+          "bytes": 43109
+        },
+        {
           "ok": true,
           "file": "pics/hasuna/07-s01-76c776df-521f-472a-a412-fe4d6c277c74.jpg",
-          "bytes": 122952,
-          "content_type": "image/jpeg"
+          "bytes": 122952
         },
         {
-          "url": "https://cdn.shopify.com/s/files/1/0471/1507/5741/files/img01_78e9e7bb-b05c-45db-a925-52f1a6de3d25.jpg?v=1787111293",
+          "ok": true,
+          "file": "pics/hasuna/07.jpg",
+          "bytes": 110808
+        },
+        {
           "ok": true,
           "file": "pics/hasuna/08-img01-78e9e7bb-b05c-45db-a925-52f1a6de3d.jpg",
-          "bytes": 71004,
-          "content_type": "image/jpeg"
+          "bytes": 71004
+        },
+        {
+          "ok": true,
+          "file": "pics/hasuna/08.jpg",
+          "bytes": 38824
         }
       ],
-      "file": ".cowork/results/TASK-003/https___hasuna_com_collections_all.html",
-      "bytes": 1301
+      "codex_code": 0,
+      "file": ".cowork/results/TASK-003/codex.log",
+      "bytes": 1351134
     }
   ],
-  "at": 1788854517
+  "at": 1788855746
 }
