@@ -3,11 +3,7 @@
   "scenario": "crawler",
   "type": "fetch",
   "title": "Fetch synchronicity",
-<<<<<<< HEAD
-  "status": "failed",
-=======
   "status": "open",
->>>>>>> 0fa534f (Dispatch jewelry image crawl through Codex exec on each Agent Computer.)
   "body": "",
   "need": [],
   "owner": "",
