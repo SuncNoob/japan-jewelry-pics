@@ -3,10 +3,10 @@
   "scenario": "crawler",
   "type": "enqueue",
   "title": "Enqueue 5 official jewelry shops",
-  "status": "open",
+  "status": "claimed",
   "body": "Browser-crawl official product images only. Respect allow_hosts.",
   "need": [],
-  "owner": "",
+  "owner": "ac1",
   "seed_urls": [
     "https://www.lienujewelry.com/collections/all",
     "https://hasuna.com/collections/all",
@@ -36,5 +36,5 @@
   "brand": "",
   "max_images": 8,
   "created_at": 1788855000,
-  "updated_at": 1788855000
+  "updated_at": 1788854361
 }
