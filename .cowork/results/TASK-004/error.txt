@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/home/admin/japan-jewelry-pics/cowork/runtime.py", line 194, in tick
+    execute(store, card, owned[0])
+  File "/home/admin/japan-jewelry-pics/cowork/runtime.py", line 174, in execute
+    store.sync_push(f"cowork({card.id}): finish {task.id} {task.status}")
+  File "/home/admin/japan-jewelry-pics/cowork/store.py", line 168, in sync_push
+    raise last_error
+  File "/home/admin/japan-jewelry-pics/cowork/store.py", line 159, in sync_push
+    self.push()
+  File "/home/admin/japan-jewelry-pics/cowork/store.py", line 148, in push
+    self.git("push")
+  File "/home/admin/japan-jewelry-pics/cowork/store.py", line 125, in git
+    raise GitError(result.stderr.strip() or result.stdout.strip() or f"git {' '.join(args)} failed")
+cowork.store.GitError: To github-jewelry:SuncNoob/japan-jewelry-pics.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 221a5da555e464130fb139615d0d8c5da161f7cc but expected c2e4de12d8bfc4ed3274ea6aac6725bf3ab15ae1)
+error: failed to push some refs to 'github-jewelry:SuncNoob/japan-jewelry-pics.git'
