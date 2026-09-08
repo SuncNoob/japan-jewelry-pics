@@ -1,0 +1,30 @@
+{
+  "id": "TASK-008",
+  "scenario": "crawler",
+  "type": "fetch",
+  "title": "Fetch siri-siri",
+  "status": "open",
+  "body": "",
+  "need": [],
+  "owner": "",
+  "seed_urls": [
+    "https://sirisiri.jp/collections/all"
+  ],
+  "allow_hosts": [
+    "sirisiri.jp",
+    "shopify.com",
+    "shopifycdn.com",
+    "myshopify.com",
+    "cloudfront.net",
+    "imgix.net",
+    "googleusercontent.com"
+  ],
+  "path": "",
+  "content": "",
+  "depends_on": [],
+  "mode": "browser",
+  "brand": "siri-siri",
+  "max_images": 16,
+  "created_at": 1788863051,
+  "updated_at": 1788863051
+}

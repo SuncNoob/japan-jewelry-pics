@@ -1,0 +1,30 @@
+{
+  "id": "TASK-010",
+  "scenario": "crawler",
+  "type": "fetch",
+  "title": "Fetch mariha",
+  "status": "open",
+  "body": "",
+  "need": [],
+  "owner": "",
+  "seed_urls": [
+    "https://www.mariha.jp/collections/all"
+  ],
+  "allow_hosts": [
+    "mariha.jp",
+    "shopify.com",
+    "shopifycdn.com",
+    "myshopify.com",
+    "cloudfront.net",
+    "imgix.net",
+    "googleusercontent.com"
+  ],
+  "path": "",
+  "content": "",
+  "depends_on": [],
+  "mode": "browser",
+  "brand": "mariha",
+  "max_images": 16,
+  "created_at": 1788863051,
+  "updated_at": 1788863051
+}
