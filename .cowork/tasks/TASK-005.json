@@ -3,7 +3,7 @@
   "scenario": "crawler",
   "type": "fetch",
   "title": "Fetch artida-oud",
-  "status": "claimed",
+  "status": "in_progress",
   "body": "",
   "need": [],
   "owner": "ac3",
@@ -35,5 +35,5 @@
   "brand": "artida-oud",
   "max_images": 16,
   "created_at": 1788854389,
-  "updated_at": 1788858536
+  "updated_at": 1788858568
 }
