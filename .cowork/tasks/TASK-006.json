@@ -3,10 +3,10 @@
   "scenario": "crawler",
   "type": "fetch",
   "title": "Fetch synchronicity",
-  "status": "done",
+  "status": "open",
   "body": "",
   "need": [],
-  "owner": "ac2",
+  "owner": "",
   "seed_urls": [
     "https://www.synchronicity-silver.com/"
   ],
@@ -23,7 +23,8 @@
     "base.shop",
     "cloudfront.net",
     "imgix.net",
-    "googleusercontent.com"
+    "googleusercontent.com",
+    "akamaized.net"
   ],
   "path": "",
   "content": "",
@@ -32,7 +33,7 @@
   ],
   "mode": "browser",
   "brand": "synchronicity",
-  "max_images": 8,
+  "max_images": 16,
   "created_at": 1788854389,
-  "updated_at": 1788856414
+  "updated_at": 1788858082
 }

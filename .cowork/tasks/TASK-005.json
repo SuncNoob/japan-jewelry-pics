@@ -3,10 +3,10 @@
   "scenario": "crawler",
   "type": "fetch",
   "title": "Fetch artida-oud",
-  "status": "done",
+  "status": "open",
   "body": "",
   "need": [],
-  "owner": "ac3",
+  "owner": "",
   "seed_urls": [
     "https://www.artidaoud.com/item?category_id=41"
   ],
@@ -23,7 +23,8 @@
     "base.shop",
     "cloudfront.net",
     "imgix.net",
-    "googleusercontent.com"
+    "googleusercontent.com",
+    "akamaized.net"
   ],
   "path": "",
   "content": "",
@@ -32,7 +33,7 @@
   ],
   "mode": "browser",
   "brand": "artida-oud",
-  "max_images": 8,
+  "max_images": 16,
   "created_at": 1788854389,
-  "updated_at": 1788856307
+  "updated_at": 1788858082
 }

@@ -27,14 +27,15 @@
     "base.shop",
     "cloudfront.net",
     "imgix.net",
-    "googleusercontent.com"
+    "googleusercontent.com",
+    "akamaized.net"
   ],
   "path": "",
   "content": "",
   "depends_on": [],
   "mode": "browser",
   "brand": "",
-  "max_images": 8,
+  "max_images": 16,
   "created_at": 1788855000,
-  "updated_at": 1788854389
+  "updated_at": 1788858082
 }
