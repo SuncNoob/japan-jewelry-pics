@@ -3,7 +3,7 @@
   "scenario": "crawler",
   "type": "extract",
   "title": "Catalog images from TASK-001",
-  "status": "claimed",
+  "status": "in_progress",
   "body": "",
   "need": [],
   "owner": "ac3",
@@ -36,5 +36,5 @@
   "brand": "",
   "max_images": 0,
   "created_at": 1788854389,
-  "updated_at": 1788856443
+  "updated_at": 1788856475
 }
