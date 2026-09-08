@@ -1,0 +1,9 @@
+{
+  "id": "ac2",
+  "role": "fetcher",
+  "capabilities": ["fetch"],
+  "model": "Auto",
+  "host": "53326",
+  "heartbeat_at": 0,
+  "protocol": "1.0"
+}

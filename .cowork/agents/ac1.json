@@ -1,0 +1,9 @@
+{
+  "id": "ac1",
+  "role": "dispatcher",
+  "capabilities": ["enqueue", "fetch"],
+  "model": "Auto",
+  "host": "56735",
+  "heartbeat_at": 0,
+  "protocol": "1.0"
+}

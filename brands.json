@@ -1,0 +1,34 @@
+{
+  "brands": [
+    {
+      "id": "lienu",
+      "name": "LIENU jewelry",
+      "note": "東京・蔵前",
+      "url": "https://www.lienujewelry.com/collections/all"
+    },
+    {
+      "id": "hasuna",
+      "name": "HASUNA",
+      "note": "エシカル、天然石・パール",
+      "url": "https://hasuna.com/collections/all"
+    },
+    {
+      "id": "les-bon-bon",
+      "name": "les bon bon",
+      "note": "カラーストーン・パール",
+      "url": "https://lesbonbon.jp/collections/all"
+    },
+    {
+      "id": "artida-oud",
+      "name": "ARTIDA OUD",
+      "note": "SV925＋天然石",
+      "url": "https://www.artidaoud.com/item?category_id=41"
+    },
+    {
+      "id": "synchronicity",
+      "name": "synchronicity",
+      "note": "作家シルバーと希少石",
+      "url": "https://www.synchronicity-silver.com/"
+    }
+  ]
+}

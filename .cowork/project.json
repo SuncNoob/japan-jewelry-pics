@@ -1,0 +1,12 @@
+{
+  "protocol": "1.0",
+  "name": "japan-jewelry-pics",
+  "scenario": "crawler",
+  "remote": "git@github.com:SuncNoob/japan-jewelry-pics.git",
+  "roles": {
+    "dispatcher": "ac1",
+    "fetcher": "ac2",
+    "analyst": "ac3"
+  },
+  "created_at": 1788855000
+}
