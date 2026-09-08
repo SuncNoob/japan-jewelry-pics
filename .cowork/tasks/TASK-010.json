@@ -3,10 +3,10 @@
   "scenario": "crawler",
   "type": "fetch",
   "title": "Fetch mariha",
-  "status": "open",
+  "status": "claimed",
   "body": "",
   "need": [],
-  "owner": "",
+  "owner": "ac3",
   "seed_urls": [
     "https://www.mariha.jp/collections/all"
   ],
@@ -26,5 +26,5 @@
   "brand": "mariha",
   "max_images": 16,
   "created_at": 1788863051,
-  "updated_at": 1788863051
+  "updated_at": 1788863185
 }
