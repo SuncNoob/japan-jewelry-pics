@@ -1,42 +1,98 @@
 [
   {
     "file": "01.jpg",
-    "source_page": "https://hasuna.com/products/aroma-b68n4525b00",
-    "image_url": "https://cdn.shopify.com/s/files/1/0471/1507/5741/files/img01-b_c31426d3-ca8c-46ab-9ca6-48df777a12d3.jpg?v=1763609783"
+    "source_page": "https://hasuna.com/products/a01r0013802",
+    "image_url": "http://cdn.shopify.com/s/files/1/0471/1507/5741/products/er08_01.jpg?width=1200",
+    "product": "ER08"
   },
   {
     "file": "02.jpg",
-    "source_page": "https://hasuna.com/products/babyring-b66r22650",
-    "image_url": "https://cdn.shopify.com/s/files/1/0471/1507/5741/products/top01_61418067-febf-460e-b971-728e2ff6c87b.jpg?v=1655272241"
+    "source_page": "https://hasuna.com/products/a02r0012302",
+    "image_url": "http://cdn.shopify.com/s/files/1/0471/1507/5741/products/er04_01.jpg?width=1200",
+    "product": "ER04"
   },
   {
     "file": "03.jpg",
-    "source_page": "https://hasuna.com/products/v19n4522650",
-    "image_url": "https://cdn.shopify.com/s/files/1/0471/1507/5741/products/img01_d3644fc5-1aae-405f-bd47-980b3721e176.jpg?v=1655274780"
+    "source_page": "https://hasuna.com/products/a02r0014703",
+    "image_url": "http://cdn.shopify.com/s/files/1/0471/1507/5741/products/er05_01.jpg?width=1200",
+    "product": "ER05"
   },
   {
     "file": "04.jpg",
-    "source_page": "https://hasuna.com/products/b50n4519600",
-    "image_url": "https://cdn.shopify.com/s/files/1/0471/1507/5741/products/190613_3-5_4725fbde-04ed-4528-950a-5bbdd9a3d137.jpg?v=1619059109"
+    "source_page": "https://hasuna.com/products/a05r0015803",
+    "image_url": "http://cdn.shopify.com/s/files/1/0471/1507/5741/products/er03_01.jpg?width=1200",
+    "product": "ER03"
   },
   {
     "file": "05.jpg",
-    "source_page": "https://hasuna.com/products/dots-b61n4522600",
-    "image_url": "https://cdn.shopify.com/s/files/1/0471/1507/5741/products/img01_3b3a57f1-bbcc-42f0-85a1-42b91dc4b258.jpg?v=1653879881"
+    "source_page": "https://hasuna.com/products/b22b2115b01",
+    "image_url": "http://cdn.shopify.com/s/files/1/0471/1507/5741/files/img01_00620005-5c33-4c85-915d-ebcdd5d2894e.jpg?width=1200",
+    "product": "eclat ブレスレット ダイヤモンド #1"
   },
   {
     "file": "06.jpg",
-    "source_page": "https://hasuna.com/products/dots-b61n0026301",
-    "image_url": "https://cdn.shopify.com/s/files/1/0471/1507/5741/files/img01_a9d5a31d-e1d0-4590-9b74-966e7010ae4b.jpg?v=1774486141"
+    "source_page": "https://hasuna.com/products/b22n4515b01",
+    "image_url": "http://cdn.shopify.com/s/files/1/0471/1507/5741/files/img01_bcdc23d7-b399-436d-9ef5-58f0637b608f.jpg?width=1200",
+    "product": "eclat ネックレス ダイヤモンド  #1"
   },
   {
     "file": "07.jpg",
-    "source_page": "https://hasuna.com/products/b50p2619600",
-    "image_url": "https://cdn.shopify.com/s/files/1/0471/1507/5741/files/190613_1-1.jpg?v=1709168243"
+    "source_page": "https://hasuna.com/products/b22p2515b01",
+    "image_url": "http://cdn.shopify.com/s/files/1/0471/1507/5741/products/10261423_562db8bde3588.jpg?width=1200",
+    "product": "eclat ピアス ダイヤモンド #1"
   },
   {
     "file": "08.jpg",
-    "source_page": "https://hasuna.com/products/dots-b61p2525a02",
-    "image_url": "https://cdn.shopify.com/s/files/1/0471/1507/5741/files/img01_05d889e3-9bde-4c08-8586-370024c57359.jpg?v=1760670698"
+    "source_page": "https://hasuna.com/products/b22r0715b02",
+    "image_url": "http://cdn.shopify.com/s/files/1/0471/1507/5741/products/11271136_5657c1b9f3c67_2b28e44e-b1a8-4913-b61c-fc613f89d18f.jpg?width=1200",
+    "product": "eclat リング ダイヤモンド #2"
+  },
+  {
+    "file": "09.jpg",
+    "source_page": "https://hasuna.com/products/b23n4515b00",
+    "image_url": "http://cdn.shopify.com/s/files/1/0471/1507/5741/products/190131_7.jpg?width=1200",
+    "product": "l&#39;unique ネックレス【完売】"
+  },
+  {
+    "file": "10.jpg",
+    "source_page": "https://hasuna.com/products/b23p2515b01",
+    "image_url": "http://cdn.shopify.com/s/files/1/0471/1507/5741/products/201118_3.jpg?width=1200",
+    "product": "l&#39;unique ピアス#1"
+  },
+  {
+    "file": "11.jpg",
+    "source_page": "https://hasuna.com/products/b50n4519600",
+    "image_url": "http://cdn.shopify.com/s/files/1/0471/1507/5741/products/190613_3-5_4725fbde-04ed-4528-950a-5bbdd9a3d137.jpg?width=1200",
+    "product": "Bless ネックレス あこやパール"
+  },
+  {
+    "file": "12.jpg",
+    "source_page": "https://hasuna.com/products/b50p2619600",
+    "image_url": "http://cdn.shopify.com/s/files/1/0471/1507/5741/files/190613_1-1.jpg?width=1200",
+    "product": "Bless ピアス ショート あこやパール"
+  },
+  {
+    "file": "13.jpg",
+    "source_page": "https://hasuna.com/products/dots-b61n0026300",
+    "image_url": "http://cdn.shopify.com/s/files/1/0471/1507/5741/files/img01_455991bf-ed29-4d8d-9d0b-65cea7b830df.jpg?width=1200",
+    "product": "Dots ネックレストップ ルチルクォーツ"
+  },
+  {
+    "file": "14.jpg",
+    "source_page": "https://hasuna.com/products/dots-b61p2522600",
+    "image_url": "http://cdn.shopify.com/s/files/1/0471/1507/5741/products/img01_9fb8fd02-012c-44ec-8629-e7ad2e774db2.jpg?width=1200",
+    "product": "Dots ピアス ホワイトムーンストーン【完売】"
+  },
+  {
+    "file": "15.jpg",
+    "source_page": "https://hasuna.com/products/equilibrium-k18-b81y0325c00",
+    "image_url": "http://cdn.shopify.com/s/files/1/0471/1507/5741/files/img01_47ef86c3-a01a-410c-abd2-59be779d1214.jpg?width=1200",
+    "product": "Equilibrium K18 リング【オーダー制作】"
+  },
+  {
+    "file": "16.jpg",
+    "source_page": "https://hasuna.com/products/equilibrium-pt-b81t0325c00",
+    "image_url": "http://cdn.shopify.com/s/files/1/0471/1507/5741/files/img01pt.jpg?width=1200",
+    "product": "Equilibrium プラチナ リング【オーダー制作】"
   }
 ]
