@@ -1,6 +1,48 @@
 {
   "brand": "synchronicity",
   "page": "https://www.synchronicity-silver.com/",
-  "engine": "http",
-  "images": []
+  "engine": "codex",
+  "codex_code": 0,
+  "images": [
+    {
+      "ok": true,
+      "file": "pics/synchronicity/01.jpg",
+      "bytes": 81185
+    },
+    {
+      "ok": true,
+      "file": "pics/synchronicity/02.jpg",
+      "bytes": 58187
+    },
+    {
+      "ok": true,
+      "file": "pics/synchronicity/03.jpg",
+      "bytes": 214024
+    },
+    {
+      "ok": true,
+      "file": "pics/synchronicity/04.jpg",
+      "bytes": 90384
+    },
+    {
+      "ok": true,
+      "file": "pics/synchronicity/05.jpg",
+      "bytes": 214793
+    },
+    {
+      "ok": true,
+      "file": "pics/synchronicity/06.jpg",
+      "bytes": 128615
+    },
+    {
+      "ok": true,
+      "file": "pics/synchronicity/07.jpg",
+      "bytes": 421263
+    },
+    {
+      "ok": true,
+      "file": "pics/synchronicity/08.jpg",
+      "bytes": 217772
+    }
+  ]
 }
