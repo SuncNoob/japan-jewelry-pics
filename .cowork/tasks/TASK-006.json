@@ -3,7 +3,7 @@
   "scenario": "crawler",
   "type": "fetch",
   "title": "Fetch synchronicity",
-  "status": "in_progress",
+  "status": "done",
   "body": "",
   "need": [],
   "owner": "ac1",
@@ -35,5 +35,5 @@
   "brand": "synchronicity",
   "max_images": 16,
   "created_at": 1788854389,
-  "updated_at": 1788859106
+  "updated_at": 1788859753
 }

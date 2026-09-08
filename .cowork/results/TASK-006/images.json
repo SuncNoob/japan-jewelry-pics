@@ -3,46 +3,98 @@
   "page": "https://www.synchronicity-silver.com/",
   "engine": "codex",
   "codex_code": 0,
+  "pdp_pages": 18,
+  "required_pdp_pages": 12,
   "images": [
     {
       "ok": true,
       "file": "pics/synchronicity/01.jpg",
-      "bytes": 81185
-    },
-    {
-      "ok": true,
-      "file": "pics/synchronicity/02.jpg",
-      "bytes": 58187
-    },
-    {
-      "ok": true,
-      "file": "pics/synchronicity/03.jpg",
-      "bytes": 214024
-    },
-    {
-      "ok": true,
-      "file": "pics/synchronicity/04.jpg",
-      "bytes": 90384
-    },
-    {
-      "ok": true,
-      "file": "pics/synchronicity/05.jpg",
       "bytes": 214793
     },
     {
       "ok": true,
+      "file": "pics/synchronicity/02.jpg",
+      "bytes": 92396
+    },
+    {
+      "ok": true,
+      "file": "pics/synchronicity/03.jpg",
+      "bytes": 81167
+    },
+    {
+      "ok": true,
+      "file": "pics/synchronicity/04.jpg",
+      "bytes": 247596
+    },
+    {
+      "ok": true,
+      "file": "pics/synchronicity/05.jpg",
+      "bytes": 57413
+    },
+    {
+      "ok": true,
       "file": "pics/synchronicity/06.jpg",
-      "bytes": 128615
+      "bytes": 78619
     },
     {
       "ok": true,
       "file": "pics/synchronicity/07.jpg",
-      "bytes": 421263
+      "bytes": 88716
     },
     {
       "ok": true,
       "file": "pics/synchronicity/08.jpg",
-      "bytes": 217772
+      "bytes": 102170
+    },
+    {
+      "ok": true,
+      "file": "pics/synchronicity/09.jpg",
+      "bytes": 122838
+    },
+    {
+      "ok": true,
+      "file": "pics/synchronicity/10.jpg",
+      "bytes": 233921
+    },
+    {
+      "ok": true,
+      "file": "pics/synchronicity/11.jpg",
+      "bytes": 174880
+    },
+    {
+      "ok": true,
+      "file": "pics/synchronicity/12.jpg",
+      "bytes": 60039
+    },
+    {
+      "ok": true,
+      "file": "pics/synchronicity/13.jpg",
+      "bytes": 135658
+    },
+    {
+      "ok": true,
+      "file": "pics/synchronicity/14.jpg",
+      "bytes": 117720
+    },
+    {
+      "ok": true,
+      "file": "pics/synchronicity/15.jpg",
+      "bytes": 70341
+    },
+    {
+      "ok": true,
+      "file": "pics/synchronicity/16.jpg",
+      "bytes": 347585
+    },
+    {
+      "ok": true,
+      "file": "pics/synchronicity/17.jpg",
+      "bytes": 177172
+    },
+    {
+      "ok": true,
+      "file": "pics/synchronicity/18.jpg",
+      "bytes": 322378
     }
   ]
 }
