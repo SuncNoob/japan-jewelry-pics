@@ -3,10 +3,10 @@
   "scenario": "crawler",
   "type": "fetch",
   "title": "Fetch artida-oud",
-  "status": "open",
+  "status": "claimed",
   "body": "",
   "need": [],
-  "owner": "",
+  "owner": "ac3",
   "seed_urls": [
     "https://www.artidaoud.com/item?category_id=41"
   ],
@@ -35,5 +35,5 @@
   "brand": "artida-oud",
   "max_images": 16,
   "created_at": 1788854389,
-  "updated_at": 1788858082
+  "updated_at": 1788858536
 }
