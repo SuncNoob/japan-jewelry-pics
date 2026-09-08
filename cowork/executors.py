@@ -11,11 +11,8 @@ from urllib.request import Request, urlopen
 from cowork.browser import (
     DEFAULT_MAX_IMAGES,
     brand_from_url,
-    download_image,
-    dump_dom,
-    parse_images,
-    shopify_images,
 )
+from cowork.codex_run import jewelry_prompt, run_codex
 from cowork.protocol import Task, dump_json, host_allowed, now
 from cowork.store import Store
 
@@ -171,59 +168,60 @@ def run_fetch(store: Store, task: Task) -> dict:
 
 
 def _fetch_browser_page(store: Store, task: Task, url: str, allow_hosts: list[str]) -> dict:
+    """Dispatch to Codex on this Agent Computer (Wuying gateway session)."""
     brand = task.brand or brand_from_url(url)
     limit = task.max_images or DEFAULT_MAX_IMAGES
     pic_dir = store.root / "pics" / brand
     pic_dir.mkdir(parents=True, exist_ok=True)
-    html = ""
-    engine = "http"
-    candidates = shopify_images(url, allow_hosts)
-    if candidates:
-        engine = "shopify-json"
-    if len(candidates) < limit:
-        try:
-            html, engine = dump_dom(url)
-        except (URLError, TimeoutError, ValueError, OSError) as exc:
-            if not candidates:
-                return {"url": url, "ok": False, "error": str(exc), "engine": "browser"}
-        else:
-            if engine == "chrome" and candidates:
-                engine = "chrome+shopify-json"
-            candidates = parse_images(html, url) + candidates
-    if html:
-        raw_path = store.result_dir(task.id) / _safe_name(url)
-        raw_path.write_text(html, encoding="utf-8")
-        raw_rel = str(raw_path.relative_to(store.root))
-    else:
-        raw_rel = ""
-    saved = []
-    seen: set[str] = set()
-    for candidate in candidates:
-        if candidate in seen:
-            continue
-        seen.add(candidate)
-        item = download_image(candidate, pic_dir, allow_hosts, len(saved) + 1)
-        if item is None:
-            continue
-        if item.get("ok") and item.get("file"):
-            item["file"] = str(Path(item["file"]).resolve().relative_to(store.root.resolve()))
-            saved.append(item)
-        if len(saved) >= limit:
-            break
+    rel_dir = str(pic_dir.relative_to(store.root))
+    prompt = jewelry_prompt(brand, url, allow_hosts, limit, rel_dir)
+    codex = run_codex(prompt, store.root)
+    images = _list_saved_images(store.root, pic_dir)
     dump_json(
         store.result_dir(task.id) / "images.json",
-        {"brand": brand, "page": url, "engine": engine, "images": saved},
+        {
+            "brand": brand,
+            "page": url,
+            "engine": "codex",
+            "codex_code": codex.get("code"),
+            "images": images,
+        },
+    )
+    notes = store.result_dir(task.id) / "codex.log"
+    notes.write_text(
+        (codex.get("stdout") or "") + "\n--- stderr ---\n" + (codex.get("stderr") or ""),
+        encoding="utf-8",
     )
     return {
         "url": url,
-        "ok": bool(saved),
-        "engine": engine,
-        "title": extract_title(html.encode("utf-8", "replace")) if html else brand,
+        "ok": bool(images),
+        "engine": "codex",
+        "title": brand,
         "brand": brand,
-        "images": saved,
-        "file": raw_rel,
-        "bytes": len(html.encode("utf-8")),
+        "images": images,
+        "codex_code": codex.get("code"),
+        "file": str(notes.relative_to(store.root)),
+        "bytes": sum(item.get("bytes") or 0 for item in images),
     }
+
+
+def _list_saved_images(root: Path, pic_dir: Path) -> list[dict]:
+    images = []
+    if not pic_dir.exists():
+        return images
+    for path in sorted(pic_dir.iterdir()):
+        if not path.is_file():
+            continue
+        if path.suffix.lower() not in {".jpg", ".jpeg", ".png", ".webp", ".gif"}:
+            continue
+        images.append(
+            {
+                "ok": True,
+                "file": str(path.resolve().relative_to(root.resolve())),
+                "bytes": path.stat().st_size,
+            }
+        )
+    return images
 
 
 def run_extract(store: Store, task: Task, tasks: dict[str, Task]) -> dict:

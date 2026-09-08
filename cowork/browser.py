@@ -13,7 +13,7 @@ from urllib.request import Request, urlopen
 from cowork.protocol import host_allowed
 
 USER_AGENT = "Cowork/0.1 (+https://github.com/wuying-multiac-cowork)"
-BROWSER_LEASE_SECONDS = 900
+BROWSER_LEASE_SECONDS = 1800
 DEFAULT_MAX_IMAGES = 8
 MIN_IMAGE_BYTES = 8_192
 MAX_IMAGE_BYTES = 3_000_000

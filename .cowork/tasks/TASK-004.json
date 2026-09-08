@@ -3,10 +3,10 @@
   "scenario": "crawler",
   "type": "fetch",
   "title": "Fetch les-bon-bon",
-  "status": "failed",
+  "status": "open",
   "body": "",
   "need": [],
-  "owner": "ac1",
+  "owner": "",
   "seed_urls": [
     "https://lesbonbon.jp/collections/all"
   ],

@@ -3,10 +3,10 @@
   "scenario": "crawler",
   "type": "fetch",
   "title": "Fetch hasuna",
-  "status": "done",
+  "status": "open",
   "body": "",
   "need": [],
-  "owner": "ac3",
+  "owner": "",
   "seed_urls": [
     "https://hasuna.com/collections/all"
   ],

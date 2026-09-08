@@ -6,7 +6,8 @@ import argparse
 import traceback
 from typing import Callable
 
-from cowork.browser import BROWSER_LEASE_SECONDS, brand_from_url
+from cowork.codex_run import CODEX_LEASE_SECONDS
+from cowork.browser import brand_from_url
 from cowork.executors import run_enqueue, run_extract, run_fetch, run_implement, run_review
 from cowork.protocol import (
     DEFAULT_LEASE_SECONDS,
@@ -111,7 +112,8 @@ def spawn_followups(store: Store, task: Task, result: dict) -> list[Task]:
             fetch_id = next_task_id(existing)
             existing.append(fetch_id)
             fetch_ids.append(fetch_id)
-            brand = task.brand or brand_from_url(url)
+            from cowork.browser import brand_from_url as _brand_of
+            brand = task.brand or _brand_of(url)
             fetch = Task(
                 id=fetch_id,
                 scenario="crawler",
@@ -205,7 +207,7 @@ def tick(store: Store, card: AgentCard, lease_seconds: int = DEFAULT_LEASE_SECON
     task = find_claimable(store, card)
     if task is None:
         return "idle"
-    lease = BROWSER_LEASE_SECONDS if task.mode == "browser" else lease_seconds
+    lease = CODEX_LEASE_SECONDS if task.mode == "browser" else lease_seconds
     if try_claim(store, card, task, lease_seconds=lease):
         return f"claimed {task.id}"
     return "claim-lost"

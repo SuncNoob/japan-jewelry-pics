@@ -3,10 +3,10 @@
   "scenario": "crawler",
   "type": "fetch",
   "title": "Fetch artida-oud",
-  "status": "done",
+  "status": "open",
   "body": "",
   "need": [],
-  "owner": "ac2",
+  "owner": "",
   "seed_urls": [
     "https://www.artidaoud.com/item?category_id=41"
   ],
