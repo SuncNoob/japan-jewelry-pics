@@ -1,0 +1,100 @@
+{
+  "ok": true,
+  "fetched": [
+    {
+      "url": "https://sirisiri.jp/collections/all",
+      "ok": true,
+      "engine": "codex",
+      "title": "siri-siri",
+      "brand": "siri-siri",
+      "images": [
+        {
+          "ok": true,
+          "file": "pics/siri-siri/01.jpg",
+          "bytes": 49618
+        },
+        {
+          "ok": true,
+          "file": "pics/siri-siri/02.jpg",
+          "bytes": 30219
+        },
+        {
+          "ok": true,
+          "file": "pics/siri-siri/03.jpg",
+          "bytes": 31409
+        },
+        {
+          "ok": true,
+          "file": "pics/siri-siri/04.jpg",
+          "bytes": 67648
+        },
+        {
+          "ok": true,
+          "file": "pics/siri-siri/05.jpg",
+          "bytes": 83353
+        },
+        {
+          "ok": true,
+          "file": "pics/siri-siri/06.jpg",
+          "bytes": 81258
+        },
+        {
+          "ok": true,
+          "file": "pics/siri-siri/07.jpg",
+          "bytes": 46144
+        },
+        {
+          "ok": true,
+          "file": "pics/siri-siri/08.jpg",
+          "bytes": 43560
+        },
+        {
+          "ok": true,
+          "file": "pics/siri-siri/09.jpg",
+          "bytes": 81428
+        },
+        {
+          "ok": true,
+          "file": "pics/siri-siri/10.jpg",
+          "bytes": 68950
+        },
+        {
+          "ok": true,
+          "file": "pics/siri-siri/11.jpg",
+          "bytes": 72710
+        },
+        {
+          "ok": true,
+          "file": "pics/siri-siri/12.jpg",
+          "bytes": 85922
+        },
+        {
+          "ok": true,
+          "file": "pics/siri-siri/13.jpg",
+          "bytes": 141382
+        },
+        {
+          "ok": true,
+          "file": "pics/siri-siri/14.jpg",
+          "bytes": 80769
+        },
+        {
+          "ok": true,
+          "file": "pics/siri-siri/15.jpg",
+          "bytes": 50529
+        },
+        {
+          "ok": true,
+          "file": "pics/siri-siri/16.jpg",
+          "bytes": 26498
+        }
+      ],
+      "pdp_pages": 16,
+      "codex_code": 0,
+      "file": ".cowork/results/TASK-008/codex.log",
+      "bytes": 1041397,
+      "error": ""
+    }
+  ],
+  "at": 1788864190
+}
