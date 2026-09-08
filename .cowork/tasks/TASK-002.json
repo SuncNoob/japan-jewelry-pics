@@ -3,10 +3,10 @@
   "scenario": "crawler",
   "type": "fetch",
   "title": "Fetch lienu",
-  "status": "open",
+  "status": "claimed",
   "body": "",
   "need": [],
-  "owner": "",
+  "owner": "ac3",
   "seed_urls": [
     "https://www.lienujewelry.com/collections/all"
   ],
@@ -35,5 +35,5 @@
   "brand": "lienu",
   "max_images": 16,
   "created_at": 1788854389,
-  "updated_at": 1788858082
+  "updated_at": 1788858099
 }
