@@ -3,7 +3,7 @@
   "scenario": "crawler",
   "type": "fetch",
   "title": "Fetch les-bon-bon",
-  "status": "in_progress",
+  "status": "done",
   "body": "",
   "need": [],
   "owner": "ac2",
@@ -34,5 +34,5 @@
   "brand": "les-bon-bon",
   "max_images": 8,
   "created_at": 1788854389,
-  "updated_at": 1788855616
+  "updated_at": 1788856034
 }

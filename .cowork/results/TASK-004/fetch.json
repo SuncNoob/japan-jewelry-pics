@@ -4,70 +4,55 @@
     {
       "url": "https://lesbonbon.jp/collections/all",
       "ok": true,
-      "engine": "chrome",
-      "title": "商品\n– les bon bon Online store",
+      "engine": "codex",
+      "title": "les-bon-bon",
       "brand": "les-bon-bon",
       "images": [
         {
-          "url": "http://cdn.shopify.com/s/files/1/0577/1306/6154/files/lesbonbon_9d27e035-5c22-4c89-802a-49150e0391f5_2000x2000.jpg?v=1760679305",
           "ok": true,
-          "file": "pics/les-bon-bon/01-lesbonbon-9d27e035-5c22-4c89-802a-49150e.jpg",
-          "bytes": 39619,
-          "content_type": "image/jpeg"
+          "file": "pics/les-bon-bon/01.jpg",
+          "bytes": 54238
         },
         {
-          "url": "https://cdn.shopify.com/s/files/1/0577/1306/6154/files/3015cb5c22c3276e5733_0104bfcb-13a5-4d7a-bada-f3d7e4114545.png?v=1642573135&width=320",
           "ok": true,
-          "file": "pics/les-bon-bon/02-3015cb5c22c3276e5733-0104bfcb-13a5-4d7a-.png",
-          "bytes": 14163,
-          "content_type": "image/png"
+          "file": "pics/les-bon-bon/02.jpg",
+          "bytes": 111973
         },
         {
-          "url": "https://cdn.shopify.com/s/files/1/0577/1306/6154/files/3015cb5c22c3276e5733_0104bfcb-13a5-4d7a-bada-f3d7e4114545.png?v=1642573135&width=1100",
           "ok": true,
-          "file": "pics/les-bon-bon/03-3015cb5c22c3276e5733-0104bfcb-13a5-4d7a-.png",
-          "bytes": 67055,
-          "content_type": "image/png"
+          "file": "pics/les-bon-bon/03.jpg",
+          "bytes": 86723
         },
         {
-          "url": "https://cdn.shopify.com/s/files/1/0577/1306/6154/products/BOB105_2.jpg?crop=center&height=1200&v=1634803764&width=1200",
           "ok": true,
-          "file": "pics/les-bon-bon/04-bob105-2.jpg",
-          "bytes": 47409,
-          "content_type": "image/jpeg"
+          "file": "pics/les-bon-bon/04.jpg",
+          "bytes": 88006
         },
         {
-          "url": "https://cdn.shopify.com/s/files/1/0577/1306/6154/products/BOB105.jpg?v=1634803769&width=320",
           "ok": true,
-          "file": "pics/les-bon-bon/05-bob105.jpg",
-          "bytes": 36440,
-          "content_type": "image/jpeg"
+          "file": "pics/les-bon-bon/05.jpg",
+          "bytes": 120981
         },
         {
-          "url": "https://cdn.shopify.com/s/files/1/0577/1306/6154/products/BOB105.jpg?crop=center&height=1400&v=1634803769&width=1400",
           "ok": true,
-          "file": "pics/les-bon-bon/06-bob105.jpg",
-          "bytes": 323857,
-          "content_type": "image/jpeg"
+          "file": "pics/les-bon-bon/06.jpg",
+          "bytes": 147250
         },
         {
-          "url": "https://cdn.shopify.com/s/files/1/0577/1306/6154/products/2toneb.jpg?v=1634870227&width=320",
           "ok": true,
-          "file": "pics/les-bon-bon/07-2toneb.jpg",
-          "bytes": 13167,
-          "content_type": "image/jpeg"
+          "file": "pics/les-bon-bon/07.jpg",
+          "bytes": 131587
         },
         {
-          "url": "https://cdn.shopify.com/s/files/1/0577/1306/6154/products/2toneb.jpg?crop=center&height=1400&v=1634870227&width=1400",
           "ok": true,
-          "file": "pics/les-bon-bon/08-2toneb.jpg",
-          "bytes": 101978,
-          "content_type": "image/jpeg"
+          "file": "pics/les-bon-bon/08.jpg",
+          "bytes": 135335
         }
       ],
-      "file": ".cowork/results/TASK-004/https___lesbonbon_jp_collections_all.html",
-      "bytes": 2960743
+      "codex_code": 0,
+      "file": ".cowork/results/TASK-004/codex.log",
+      "bytes": 876093
     }
   ],
-  "at": 1788854537
+  "at": 1788856034
 }
