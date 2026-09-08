@@ -3,7 +3,7 @@
   "scenario": "crawler",
   "type": "enqueue",
   "title": "Enqueue 5 official jewelry shops",
-  "status": "claimed",
+  "status": "in_progress",
   "body": "Browser-crawl official product images only. Respect allow_hosts.",
   "need": [],
   "owner": "ac1",
@@ -36,5 +36,5 @@
   "brand": "",
   "max_images": 8,
   "created_at": 1788855000,
-  "updated_at": 1788854361
+  "updated_at": 1788854385
 }
